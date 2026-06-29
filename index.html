@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Israt Jahan Lamia | CSE Student, AI Researcher & Software Engineer Portfolio</title>
+  <meta name="title" content="Israt Jahan Lamia | CSE Student, AI Researcher & Software Engineer Portfolio">
+  <meta name="description" content="Portfolio of Israt Jahan Lamia, Computer Science and Engineering (CSE) student at BRAC University, AI/ML researcher, and Software Engineer. Specialized in Deep Learning, Computer Vision, and Web Development.">
+  <meta name="keywords" content="Israt Jahan Lamia, AI Researcher, Software Engineer, Deep Learning, Computer Vision, Brain Hemorrhage Detection, BRAC University, Codium Digital, Portfolio, Female in Tech, CSE">
+  <meta name="author" content="Israt Jahan Lamia">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://isratjahanlamia.dev/">
+  <meta property="og:title" content="Israt Jahan Lamia | CSE Student, AI Researcher & Software Engineer Portfolio">
+  <meta property="og:description" content="Exploring the frontier of AI, Deep Learning, and Full Stack Development. Discover research projects, publications, experience, and academic work.">
+  <meta property="og:image" content="./assets/profile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://isratjahanlamia.dev/">
+  <meta property="twitter:title" content="Israt Jahan Lamia | CSE Student, AI Researcher & Software Engineer Portfolio">
+  <meta property="twitter:description" content="Exploring the frontier of AI, Deep Learning, and Full Stack Development. Discover research projects, publications, experience, and academic work.">
+  <meta property="twitter:image" content="./assets/profile.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/profile.png">
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data (Person & CreativeWork Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Israt Jahan Lamia",
+    "jobTitle": "AI Researcher & Software Engineer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "BRAC University"
+    },
+    "description": "Computer Science and Engineering (CSE) student at BRAC University, AI researcher, and Software Engineer specializing in Deep Learning and Web Development.",
+    "image": "https://isratjahanlamia.dev/assets/profile.png",
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Deep Learning",
+      "Computer Vision",
+      "Medical Image Processing",
+      "Software Engineering",
+      "MERN Stack Web Development",
+      "Microfluidics Simulation"
+    ],
+    "sameAs": [
+      "https://github.com/IsratJahanLamia",
+      "https://www.linkedin.com/in/israt-jahan-lamia-b07a5121b/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Glow Cursor Effect Background -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Background Canvas for Particles -->
+  <canvas id="ambient-particles" aria-hidden="true"></canvas>
+
+  <!-- Ambient Light Blobs -->
+  <div class="blob-container" aria-hidden="true">
+    <div class="blob blob-purple"></div>
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-cyan"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header id="main-header">
+    <div class="nav-container">
+      <a href="#hero" class="logo" aria-label="Israt Jahan Lamia Portfolio Home">
+        <span class="logo-text">I J L<span class="dot">.</span></span>
+      </a>
+      
+      <nav id="nav-menu" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="./assets/resume_israt_jahan_lamia.pdf" class="btn btn-outline btn-sm resume-btn" download="Israt_Jahan_Lamia_Resume.pdf">
+          <span>Resume</span>
+          <i data-lucide="download" class="icon-sm"></i>
+        </a>
+        <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content container">
+        <div class="hero-text-side">
+          <div class="badge fade-in">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for Internships & Collaborations</span>
+          </div>
+          <h1 class="hero-name fade-in">
+            Israt Jahan Lamia
+          </h1>
+          <h2 class="hero-headline fade-in">
+            <span class="role-static">Aspiring </span>
+            <span id="role-rotator" class="role-dynamic">AI Researcher</span>
+          </h2>
+          <p class="hero-description fade-in">
+            Building intelligent systems through Artificial Intelligence, Deep Learning, and Software Engineering. Developing microfluidics simulations and full-stack solutions.
+          </p>
+          <div class="hero-buttons fade-in">
+            <a href="./assets/resume_israt_jahan_lamia.pdf" class="btn btn-primary" download="Israt_Jahan_Lamia_Resume.pdf">
+              <span>Download Resume</span>
+              <i data-lucide="arrow-down-to-line"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Projects</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual-side fade-in">
+          <div class="profile-card-wrapper">
+            <div class="profile-card-glow"></div>
+            <div class="profile-card">
+              <img src="./assets/profile.png" alt="Israt Jahan Lamia - Visual representation" class="profile-img" loading="eager">
+              <div class="profile-card-details">
+                <span class="profile-card-title">Israt Jahan Lamia</span>
+                <span class="profile-card-subtitle">CSE Student @ BRAC University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <a href="#about" aria-label="Scroll to About Me">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Storytelling</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Card -->
+          <div class="about-card story-card glass-card scroll-reveal">
+            <div class="card-icon-header">
+              <i data-lucide="sparkles" class="accent-purple"></i>
+              <h3>My Journey & Philosophy</h3>
+            </div>
+            <div class="story-content">
+              <p>
+                My passion for Computer Science and Engineering is fueled by an intense curiosity to understand how intelligent systems can solve complex, real-world problems. As an AI & Machine Learning enthusiast, I focus on building neural architectures that interpret and process data in ways that mimic and augment human capabilities.
+              </p>
+              <p>
+                Bridging software engineering practices with cutting-edge academic research allows me to write clean, scalable code while developing complex algorithms. I strive to continuously learn, innovate, and contribute to impactful technologies, preparing myself for graduate programs and international R&D labs.
+              </p>
+            </div>
+            <div class="stats-row">
+              <div class="stat-box">
+                <span class="stat-number" data-target="3.30">0.00</span>
+                <span class="stat-label">CGPA / 4.00</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Academic Projects</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Publications</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Timeline & Achievements -->
+          <div class="about-card timeline-card glass-card scroll-reveal">
+            <div class="card-icon-header">
+              <i data-lucide="graduation-cap" class="accent-pink"></i>
+              <h3>Education & Achievements</h3>
+            </div>
+            
+            <div class="education-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2022 - September 2026</span>
+                  <h4>B.Sc. in Computer Science and Engineering</h4>
+                  <p class="timeline-school">BRAC University</p>
+                  <p class="timeline-desc">Major in Computer Science and Engineering. Focusing on Artificial Intelligence, Machine Learning, and Biomedical Applications.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Academic Scholarships</span>
+                  <h4>Scholarships & Awards</h4>
+                  <ul class="achievements-list">
+                    <li>PSC Board Scholarship for Outstanding Results</li>
+                    <li>JSC Board Scholarship for Outstanding Results</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="goals-box">
+              <span class="goals-title">Future Research & Career Goals:</span>
+              <p>To pursue an MS/Ph.D. in Computer Science and Engineering focusing on Deep Learning, Computer Vision, and Medical diagnostics while building scalable full-stack products.</p>
+            </div>
+          </div>
+          
+          <!-- Relevant Coursework Bento Extension -->
+          <div class="about-card coursework-card glass-card span-2 scroll-reveal">
+            <div class="card-icon-header">
+              <i data-lucide="book-open" class="accent-cyan"></i>
+              <h3>Relevant Coursework</h3>
+            </div>
+            <div class="courses-grid">
+              <span class="course-badge">Artificial Intelligence</span>
+              <span class="course-badge">Machine Learning</span>
+              <span class="course-badge">Algorithms</span>
+              <span class="course-badge">Data Structures</span>
+              <span class="course-badge">Database Systems</span>
+              <span class="course-badge">Operating Systems</span>
+              <span class="course-badge">Computer Architecture</span>
+              <span class="course-badge">VLSI Design</span>
+              <span class="course-badge">Introduction to Robotics</span>
+              <span class="course-badge">Data Communications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Competencies</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Bento Grid for Skills -->
+        <div class="bento-grid">
+          
+          <!-- Skill Category: AI & Research -->
+          <div class="bento-card skill-card glass-card span-2 scroll-reveal" data-accent="purple">
+            <div class="bento-bg-gradient purple-glow"></div>
+            <div class="card-header">
+              <i data-lucide="brain-circuit" class="accent-purple"></i>
+              <h3>AI, ML & Simulation Software</h3>
+            </div>
+            <p class="card-description">Developing neural networks, computer vision classification, and simulating bio-fluidic micro-systems.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><i data-lucide="cpu"></i> Machine Learning</span>
+              <span class="skill-tag"><i data-lucide="layers"></i> Deep Learning</span>
+              <span class="skill-tag"><i data-lucide="scan-eye"></i> Computer Vision</span>
+              <span class="skill-tag"><i data-lucide="binary"></i> Medical Image Processing</span>
+              <span class="skill-tag">COMSOL Multiphysics</span>
+              <span class="skill-tag">Google Colab</span>
+              <span class="skill-tag">Matlab</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Programming -->
+          <div class="bento-card skill-card glass-card scroll-reveal" data-accent="pink">
+            <div class="bento-bg-gradient pink-glow"></div>
+            <div class="card-header">
+              <i data-lucide="code-2" class="accent-pink"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <p class="card-description">Core scripting and programming languages.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">JS (JavaScript)</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Web Development (MERN/Relational) -->
+          <div class="bento-card skill-card glass-card scroll-reveal" data-accent="cyan">
+            <div class="bento-bg-gradient cyan-glow"></div>
+            <div class="card-header">
+              <i data-lucide="globe" class="accent-cyan"></i>
+              <h3>Web Engineering</h3>
+            </div>
+            <p class="card-description">Frontend, Backend, and Database stack.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Hardware & Tools -->
+          <div class="bento-card skill-card glass-card span-2 scroll-reveal" data-accent="mixed">
+            <div class="bento-bg-gradient mixed-glow"></div>
+            <div class="card-header">
+              <i data-lucide="terminal" class="accent-cyan"></i>
+              <h3>Hardware & Development Tools</h3>
+            </div>
+            <p class="card-description">Embedded hardware and software deployment environment tools.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><i data-lucide="cpu"></i> Arduino</span>
+              <span class="skill-tag"><i data-lucide="terminal"></i> Raspberry Pi</span>
+              <span class="skill-tag"><i data-lucide="github"></i> GitHub / Git</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">phpMyAdmin</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Professional Path</span>
+          <h2 class="section-title">Experience & Activities</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-block scroll-reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card-content glass-card">
+              <span class="exp-date">May 2026 - Present</span>
+              <div class="exp-header">
+                <h3>Software Engineer Intern</h3>
+                <span class="exp-company">Codium Digital</span>
+              </div>
+              <p class="exp-description">
+                Contributing to the design, development, and maintenance of software applications. Implementing backend and frontend features in a collaborative environment.
+              </p>
+              <ul class="exp-bullets">
+                <li>Developed scalable backend and frontend features, improving application performance.</li>
+                <li>Collaborated with cross-functional teams and participated in code reviews.</li>
+                <li>Debugging, deployment, and implementation of production-ready software solutions.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="exp-tag">Remote</span>
+                <span class="exp-tag">Software Development</span>
+                <span class="exp-tag">Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-block scroll-reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card-content glass-card">
+              <span class="exp-date">2025</span>
+              <div class="exp-header">
+                <h3>Undergraduate Thesis & Research</h3>
+                <span class="exp-company">BRAC University</span>
+              </div>
+              <p class="exp-description">
+                Conducted deep learning biomedical research focusing on brain hemorrhage detection and malaria image classification.
+              </p>
+              <ul class="exp-bullets">
+                <li>Undergraduate Thesis: Brain Hemorrhage Detection after Brain Stroke using Deep Learning.</li>
+                <li>Conducted literature reviews on CT/MRI scan classifications and automated post-stroke AI support.</li>
+                <li>Designed simulated cell transportation microfluidic systems using COMSOL Multiphysics.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="exp-tag">Thesis</span>
+                <span class="exp-tag">Biomedical AI</span>
+                <span class="exp-tag">COMSOL</span>
+                <span class="exp-tag">Malaria CNN</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Portfolio</span>
+          <h2 class="section-title">Academic Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls scroll-reveal">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+          <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+          <button class="filter-btn" data-filter="iot">IoT & Hardware</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Visual Fashion Stylish -->
+          <div class="project-card glass-card scroll-reveal" data-category="ai-ml web-dev">
+            <div class="project-image-container">
+              <img src="./assets/fashion_styling.png" alt="Visual Fashion Stylish Interface Mockup" class="project-img" loading="lazy">
+              <div class="project-badge">AI Recommendations</div>
+            </div>
+            <div class="project-content">
+              <h3>Visual Fashion Stylish</h3>
+              <p class="project-desc">
+                An AI-inspired personalized fashion styling platform featuring user authentication, profile management, and interactive dashboards.
+              </p>
+              <ul class="project-features">
+                <li><i data-lucide="check" class="bullet-icon"></i> Skin tone detection and body shape analysis for outfit matches.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Dynamic color suggestion engines based on user profiles.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Virtual wardrobe, favorites tracking, and e-commerce integrations.</li>
+              </ul>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/isratjahanlamia/project_Visual_Fashion_Stylish" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="btn btn-primary btn-sm demo-trigger" data-project="Fashion Stylish">
+                  <i data-lucide="external-link"></i> Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Disaster Relief Coordination System -->
+          <div class="project-card glass-card scroll-reveal" data-category="web-dev">
+            <div class="project-image-container">
+              <img src="./assets/disaster_relief.png" alt="Disaster Relief Management UI" class="project-img" loading="lazy">
+              <div class="project-badge">MERN Stack</div>
+            </div>
+            <div class="project-content">
+              <h3>Disaster Relief Coordination System</h3>
+              <p class="project-desc">
+                A full-stack disaster management system offering role-based access control for citizens, volunteers, and administrators.
+              </p>
+              <ul class="project-features">
+                <li><i data-lucide="check" class="bullet-icon"></i> Secure JWT-based authentication and dashboard controls.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Emergency request tracking, shelter allocation, and task dispatches.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Google Maps API, Cloudinary uploads, Nodemailer, and Twilio SMS.</li>
+              </ul>
+              <div class="project-tech">
+                <span>MongoDB</span>
+                <span>Express.js</span>
+                <span>React.js</span>
+                <span>Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/isratjahanlamia/Disaster-Relief-Coordination-System" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="btn btn-primary btn-sm demo-trigger" data-project="Disaster Relief">
+                  <i data-lucide="external-link"></i> Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Bracu Diaries -->
+          <div class="project-card glass-card scroll-reveal" data-category="web-dev">
+            <div class="project-image-container">
+              <img src="./assets/bracu_diaries.png" alt="Bracu Diaries Web Interface Mockup" class="project-img" loading="lazy">
+              <div class="project-badge">Campus Portal</div>
+            </div>
+            <div class="project-content">
+              <h3>Bracu Diaries</h3>
+              <p class="project-desc">
+                A community-centric university blog and resource sharing web platform tailored for student journaling and study collaborations.
+              </p>
+              <ul class="project-features">
+                <li><i data-lucide="check" class="bullet-icon"></i> Secure login flows with dashboard permissions.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Blog writing support with Markdown rendering.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> File upload capability for question banks and notes.</li>
+              </ul>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/isratjahanlamia/Bracu_Diaries" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="btn btn-primary btn-sm demo-trigger" data-project="Bracu Diaries">
+                  <i data-lucide="external-link"></i> Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: IoT Rickshaw Safety System -->
+          <div class="project-card glass-card scroll-reveal" data-category="iot">
+            <div class="project-image-container">
+              <img src="./assets/full_stack_projects.png" alt="IoT Rickshaw Safety Blueprint mockup" class="project-img" loading="lazy">
+              <div class="project-badge">Hardware & IoT</div>
+            </div>
+            <div class="project-content">
+              <h3>IoT-Based Smart Rickshaw Safety System</h3>
+              <p class="project-desc">
+                Arduino-based smart transit solution monitoring speeds and locations to safeguard passengers using embedded architectures.
+              </p>
+              <ul class="project-features">
+                <li><i data-lucide="check" class="bullet-icon"></i> Arduino controller integrated with GPS, GSM, and LCD displays.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Real-time overspeed alerts, parking locks, and one-touch SOS triggers.</li>
+                <li><i data-lucide="check" class="bullet-icon"></i> Low-cost traffic safety solution using ultrasonic proximity sensors.</li>
+              </ul>
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>C++</span>
+                <span>GPS & GSM</span>
+                <span>Sensors</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/isratjahanlamia/Smart-Rickshaw-Safety-System" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+                <button class="btn btn-primary btn-sm demo-trigger" data-project="Rickshaw IoT">
+                  <i data-lucide="external-link"></i> Sandbox
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Academic Innovation</span>
+          <h2 class="section-title">Research & Publications</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="research-container glass-card scroll-reveal">
+          <div class="research-content-layout">
+            <div class="research-text">
+              <h3>Biomedical AI & Machine Learning Research</h3>
+              <p class="research-intro">
+                Primary focus centers on the application of <strong>Deep Learning, Computer Vision, and Computational Modeling</strong> to biological and clinical diagnostics.
+              </p>
+              
+              <div class="research-focus-blocks">
+                <div class="focus-block">
+                  <h4>Dielectrophoresis-Based Cell Separation (2025)</h4>
+                  <p>Investigated microfluidic transportation and cell separation systems using COMSOL Multiphysics software simulation models.</p>
+                </div>
+                
+                <div class="focus-block">
+                  <h4>Malaria Image Classification CNN-A (2025)</h4>
+                  <p>Evaluated convolutional neural architectures for optimal performance and diagnosis markers on malaria microscopy imaging datasets.</p>
+                </div>
+
+                <div class="focus-block">
+                  <h4>Brain Tumor Size Prediction (2025)</h4>
+                  <p>Developed a stacking ensemble machine learning methodology to forecast brain tumor dimensions from volumetric scans (Accepted for Publication).</p>
+                </div>
+              </div>
+
+              <div class="thesis-info">
+                <div class="thesis-badge"><i data-lucide="award"></i> Thesis Focus</div>
+                <p><strong>Topic:</strong> Brain Hemorrhage Detection after Brain Stroke using Deep Learning Algorithms (Undergraduate Thesis 2025).</p>
+              </div>
+            </div>
+
+            <div class="research-stats">
+              <div class="res-stat-card">
+                <div class="res-stat-icon"><i data-lucide="book-open" class="accent-purple"></i></div>
+                <span class="res-stat-value">3</span>
+                <span class="res-stat-label">Publications</span>
+              </div>
+              <div class="res-stat-card">
+                <div class="res-stat-icon"><i data-lucide="check-circle" class="accent-pink"></i></div>
+                <span class="res-stat-value">2025</span>
+                <span class="res-stat-label">Thesis Completed</span>
+              </div>
+              <div class="res-stat-card">
+                <div class="res-stat-icon"><i data-lucide="zap" class="accent-cyan"></i></div>
+                <span class="res-stat-value">DEP</span>
+                <span class="res-stat-label">COMSOL Simulation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurriculars & Achievements Section -->
+    <section id="achievements" class="achievements-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Leadership & Honors</span>
+          <h2 class="section-title">Certifications & Extracurriculars</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- Extracurricular 1 -->
+          <div class="achievement-card glass-card scroll-reveal">
+            <div class="ach-icon"><i data-lucide="award" class="accent-purple"></i></div>
+            <div class="ach-content">
+              <h3>Board Scholarships</h3>
+              <span class="ach-issuer">PSC & JSC</span>
+              <p class="ach-desc">Awarded PSC board scholarship and JSC board scholarship for outstanding results during early academic stages.</p>
+            </div>
+          </div>
+
+          <!-- Extracurricular 2 -->
+          <div class="achievement-card glass-card scroll-reveal">
+            <div class="ach-icon"><i data-lucide="shield-check" class="accent-pink"></i></div>
+            <div class="ach-content">
+              <h3>Udemy Machine Learning A-Z</h3>
+              <span class="ach-issuer">Udemy Certification</span>
+              <p class="ach-desc">Completed the verified Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2025] course (43 total hours).</p>
+            </div>
+          </div>
+
+          <!-- Extracurricular 3 -->
+          <div class="achievement-card glass-card scroll-reveal">
+            <div class="ach-icon"><i data-lucide="users" class="accent-cyan"></i></div>
+            <div class="ach-content">
+              <h3>IEEE BRACU & Leadership</h3>
+              <span class="ach-issuer">IEEE Student Branch</span>
+              <p class="ach-desc">Active member of IEEE BRAC University Student Branch and participant in GHEA21 Virtual Student Leadership Conference 2025.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Recommendations</span>
+          <h2 class="section-title">References</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="references-grid">
+          <div class="reference-card glass-card scroll-reveal">
+            <div class="ref-avatar">
+              <i data-lucide="user" class="accent-purple"></i>
+            </div>
+            <h3>Salaudin Gazi</h3>
+            <span class="ref-title">Android Technical Lead at <strong>meldCX</strong></span>
+            <div class="ref-contact">
+              <i data-lucide="mail" class="icon-sm"></i>
+              <a href="mailto:salauddin@meldcx.com">salauddin@meldcx.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tagline">Get In Touch</span>
+          <h2 class="section-title">Connect With Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info and Cards -->
+          <div class="contact-info-side scroll-reveal">
+            <div class="glass-card contact-badge-card">
+              <h3>Let's Collaborate on Research or Software</h3>
+              <p>Open to internships, graduate research assistantships (RA), software engineering roles, and innovative open-source collaborations.</p>
+              
+              <div class="contact-methods">
+                <a href="mailto:isratjahan.cse.bracu@gmail.com" class="contact-method-item">
+                  <div class="method-icon"><i data-lucide="mail"></i></div>
+                  <div class="method-text">
+                    <span class="method-label">Email Me</span>
+                    <span class="method-value">isratjahan.cse.bracu@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/israt-jahan-lamia-b07a5121b/" target="_blank" rel="noopener" class="contact-method-item">
+                  <div class="method-icon"><i data-lucide="linkedin"></i></div>
+                  <div class="method-text">
+                    <span class="method-label">LinkedIn Connection</span>
+                    <span class="method-value">in/israt-jahan-lamia</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/IsratJahanLamia" target="_blank" rel="noopener" class="contact-method-item">
+                  <div class="method-icon"><i data-lucide="github"></i></div>
+                  <div class="method-text">
+                    <span class="method-label">GitHub Repository</span>
+                    <span class="method-value">github.com/IsratJahanLamia</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-side scroll-reveal">
+            <form id="contact-form" class="glass-card contact-form" action="#" method="POST">
+              <div class="form-row-2">
+                <div class="input-group">
+                  <label for="form-name">Your Name</label>
+                  <input type="text" id="form-name" name="name" required placeholder="Jane Doe">
+                </div>
+                <div class="input-group">
+                  <label for="form-email">Your Email</label>
+                  <input type="email" id="form-email" name="email" required placeholder="jane@example.com">
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" required placeholder="Research Collaboration / Job Opportunity">
+              </div>
+              <div class="input-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" rows="5" required placeholder="Hello Lamia, I would love to talk about..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+              
+              <div id="form-response" class="form-feedback-message" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Elegant Footer -->
+  <footer id="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-text">I J L<span class="dot">.</span></span>
+        </a>
+        <p>Computer Science and Engineering Student | AI Researcher | Software Engineer</p>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://github.com/IsratJahanLamia" target="_blank" rel="noopener" aria-label="GitHub Profile"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/israt-jahan-lamia-63835238b/" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+        <a href="https://www.facebook.com/israt.jahan.lamia.931049" target="_blank" rel="noopener" aria-label="Facebook Profile"><i data-lucide="facebook"></i></a>
+        <a href="mailto:isratjahan.cse.bracu@gmail.com" aria-label="Send Email"><i data-lucide="mail"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Israt Jahan Lamia. All Rights Reserved. Built with elegance and performance.</p>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#hero" id="back-to-top" aria-label="Scroll to top" class="hidden">
+      <i data-lucide="arrow-up"></i>
+    </a>
+  </footer>
+
+  <!-- Modal for Live Demo / Info Placeholder -->
+  <div id="demo-modal" class="modal-overlay hidden" aria-modal="true" role="dialog">
+    <div class="modal-content glass-card">
+      <button class="modal-close" aria-label="Close modal"><i data-lucide="x"></i></button>
+      <div class="modal-body">
+        <i data-lucide="rocket" class="modal-icon accent-purple"></i>
+        <h3 id="modal-project-title">Demo Title</h3>
+        <p class="modal-description">This live demo sandbox is simulating a high-performance workspace environment. In production, this trigger connects to a deployed serverless web instance or interactive Hugging Face Space.</p>
+        <div class="modal-interactive-sandbox">
+          <div class="sandbox-header">
+            <span class="sand-dot red"></span>
+            <span class="sand-dot yellow"></span>
+            <span class="sand-dot green"></span>
+            <span class="sand-title">terminal - israt-jahan-lamia ~ sandbox</span>
+          </div>
+          <div class="sandbox-console">
+            <p class="cmd-line"><span class="prompt">$</span> npm run dev --project=<span id="modal-project-slug">project</span></p>
+            <p class="log-line text-cyan">Starting development server...</p>
+            <p class="log-line text-purple">Loading modules and environment configurations...</p>
+            <p class="log-line text-pink">Database connection established (MySQL local).</p>
+            <p class="log-line text-green">✔ Live interactive instance simulated successfully!</p>
+          </div>
+        </div>
+        <button class="btn btn-secondary modal-btn-close">Close Sandbox</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
